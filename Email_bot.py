@@ -19,8 +19,10 @@ try:
     SERVER.starttls()
     
     # login into gmail account
-    EMAIL = "hamidbigga2020@gmail.com"
-    PASSWORD = "hamid2020"
+    cprint("Enter the following to login into your gmail account...","yellow")
+    print()
+    EMAIL = input(termcolor.colored("Enter your Email: ","yellow"))
+    PASSWORD = input(termcolor.colored("Enter your Email Password: ","yellow"))
     
     def login(email, passw):
         try:

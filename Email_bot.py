@@ -53,7 +53,7 @@ try:
             cprint("Message Was Not Sent . . . . . .", "red")
             exit()
             
-            
-    send_mail()
+    while True:       
+        send_mail()
 except:
     cprint("Couldn't Connect To Gmail Server . . . . .", "red")

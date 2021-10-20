@@ -40,14 +40,16 @@ try:
         msg = input(termcolor.colored("Compose Email: ", "yellow"))
         reciever = input(termcolor.colored("Enter Reciever Email: ", "yellow"))
         #subject = input(termcolor.colored("Enter Your Subject: ", "yellow"))
+        print()
         try:
-            sending= True
-            while sending:
-                SERVER.sendmail(EMAIL, reciever, msg)
-                sleep(0.3)
-                print()
-                cprint(f"Message  Has Been Sent Successfully To {reciever} . . . . .", "green")
+            sending= True 
+            SERVER.sendmail(EMAIL, reciever, msg)
+            cprint("Message sent successfully...","green")
+            sleep(0.3)
+            print()
+            cprint(f"Message  Has Been Sent Successfully To {reciever} . . . . .", "green")
         except:
+            sending = False 
             cprint("Message Was Not Sent . . . . . .", "red")
             exit()
             

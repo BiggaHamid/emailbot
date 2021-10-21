@@ -6,7 +6,7 @@ try:
     import sys
     from time import sleep
 except:
-    from os mport system
+    from os import system
     system("pip3 install smtplib")
     system("pip3 install termcolor")
     system("pip3 install time")

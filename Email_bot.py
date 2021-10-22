@@ -13,6 +13,12 @@ except:
     system("pip3 install sys")
     system("pip3 install python3")
 
+import smtplib
+import termcolor
+from termcolor import cprint
+import sys
+from time import sleep
+
 try:
     # connect to email server
     SERVER = smtplib.SMTP("smtp.gmail.com", 587)
